@@ -13,6 +13,7 @@ enum Command
   CommandGetValue = 'r',
   CommandSetMax = 'm',
   CommandSetMin = '0',
+  CommandBlink = 'b',
   CommandReboot = 'p',
   CommandGetState = 's',
   NoCommandUntilCarriageReturn = '#' 
@@ -23,6 +24,20 @@ enum State
   NormalState = 0,
   RebootRequested = 1,
   FactoryResetRequested = 2
+};
+
+enum BlinkMode
+{
+  BlinkOff = '0',
+  BlinkOn = 'm',
+  BlinkSlow1s = '1',
+  BlinkSlow2s = '2',
+  BlinkSlow3s = '3',
+  BlinkSlowInfinite = 's',
+  BlinkFast1 = 'a',
+  BlinkFast2 = 'b',
+  BlinkFast3 = 'c',
+  BlinkFastInfinite = 'f'
 };
 
 enum ExtraArgument
@@ -87,6 +102,12 @@ static const Description descriptions[] =
     "Set PWM to minimum value",
   },
   {
+    CommandBlink,
+    NoExtraArgument,
+    NoReturnedValue,
+    "Set LED1 blinking mode"
+  },
+  {
     CommandReboot,
     NoExtraArgument,
     NoReturnedValue,
@@ -95,3 +116,4 @@ static const Description descriptions[] =
 };
 
 #endif // PWM_CONTROLLER_COMMANDS_H
+
