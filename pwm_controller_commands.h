@@ -22,17 +22,17 @@ enum Command
 
 enum State
 {
-  NormalState = 0,
-  RebootRequested = 1,
-  FactoryResetRequested = 2
+  NormalState = '0',
+  RebootRequested = '1',
+  FactoryResetRequested = '2'
 };
 
 // Is an alias of State
 enum ButtonState
 {
-  ButtonUnpressed = 0,
-  ButtonPressed = 1,
-  ButtonLongPressed = 2
+  ButtonUnpressed = '0',
+  ButtonPressed = '1',
+  ButtonLongPressed = '2'
 };
 
 enum BlinkMode
