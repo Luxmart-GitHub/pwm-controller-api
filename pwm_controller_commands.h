@@ -112,7 +112,7 @@ static const Description descriptions[] =
   },
   {
     CommandBlink,
-    NoExtraArgument,
+    ValueExtraArgument,
     NoReturnedValue,
     "Set LED1 blinking mode"
   },
