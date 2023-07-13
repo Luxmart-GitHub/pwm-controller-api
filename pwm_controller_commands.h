@@ -39,9 +39,9 @@ enum BlinkMode
 {
   BlinkOff = '0',
   BlinkOn = 'm',
-  BlinkSlow1s = '1',
-  BlinkSlow2s = '2',
-  BlinkSlow3s = '3',
+  BlinkSlow1 = '1',
+  BlinkSlow2 = '2',
+  BlinkSlow3 = '3',
   BlinkSlowInfinite = 's',
   BlinkFast1 = 'a',
   BlinkFast2 = 'b',
